@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewpoint" />
+    <title>Post</title>
+    <style>
+      .formElement {
+        margin-bottom: 18px;
+      }
+      label {
+        display: block;
+        margin-left: 10px;
+        margin-right: 20px;
+      }
+      input {
+        min-width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Create Post</h1>
+
+    <form action="/create/submit">
+      <div class="formElement">
+        <label for="title">
+          Title
+          <input id="title" name="title" type="text" />
+        </label>
+      </div>
+
+      <div class="formElement">
+        <label for="postText">
+          Text
+          <input id="postText" name="postText" type="text" />
+        </label>
+      </div>
+
+      <div class="formElement">
+        <label for="author">
+          Author
+          <input id="author" name="author" type="text" />
+        </label>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
